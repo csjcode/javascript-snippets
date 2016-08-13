@@ -28,12 +28,15 @@ document.write("href: " + window.location.href + '<br />');
 document.write("pathname: " + window.location.pathname + '<br />');
 document.write("host: " + window.location.host + '<br />');
 document.write("protocol: " + window.location.protocol + '<br />');
+document.write("hash: " + window.location.hash + '<br />');
+document.write("search: " + window.location.search + '<br />');
+document.write("origin: " + window.location.origin + '<br />');
 document.write("data query string: " + getParameterByName("data") + '<br />');
 
 
 var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
 var pathArray = window.location.pathname.split( '/' );
-var secondLevelLocation = pathArray[2]; // this may vary by loclahost or host
+var secondLevelLocation = pathArray[2]; // this may vary by localhost or host
 var newPathname = "";
 for (i = 0; i < pathArray.length; i++) {
   newPathname += "/";
