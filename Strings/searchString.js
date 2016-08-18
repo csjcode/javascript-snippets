@@ -1,4 +1,4 @@
-require("babel-register");
+// require("babel-register");
 
 //1a. Basic find function in E5
 var str = "This is my string to search";
