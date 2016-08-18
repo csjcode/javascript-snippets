@@ -1,2 +1,3 @@
 # javascript-snippets
-Misc. javascript snippets
+
+Javascript snippets to remember.
