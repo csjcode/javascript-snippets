@@ -34,7 +34,6 @@ function sort() {
 }
 sort(40, 20, 50, 30);    // [20, 30, 40, 50]
 
-
 // Counting arguments
 
 function countArguments() {
