@@ -11,6 +11,45 @@
 */
 
 
+
+/* ---------------------------------------------------------
+          Apply and Call
+
+apply lets you invoke the function with arguments as an array
+call requires the parameters be listed explicitly
+A useful mnemonic is "A for array and C for comma."
+src: stackoverflow
+
+-----------------------------------------------------------*/
+
+function theFunction(name, profession) {
+    console.log("My name is " + name + " and I am a " + profession + ".");
+}
+theFunction("John", "fireman");
+theFunction.apply(undefined, ["Susan", "school teacher"]);
+theFunction.call(undefined, "Claude", "mathematician");
+
+// My name is John and I am a fireman.
+// My name is Susan and I am a school teacher.
+// My name is Claude and I am a mathematician.
+
+/* ---------------------------------------------------------
+in chrome console:
+
+var person1 = {name: 'Marvin', age: 42, size: '2xM'};
+var person2 = {name: 'Zaphod', age: 42000000000, size: '1xS'};
+
+var say = function(greeting){
+    alert(greeting + ', ' + this.name);
+};
+
+say.call(person1, 'Hello');
+say.call(person2, 'Goodbye')
+
+-----------------------------------------------------------*/
+
+
+
 // call - attaches this into function and executes the function immediately:
 
 var person = {
