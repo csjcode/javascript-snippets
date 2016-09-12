@@ -3,7 +3,9 @@
 //1a. Basic find function in E5
 var str = "This is my string to search";
 var searchStr = "string";
-var pos = function(totalStr,stringToSearch){ return str.indexOf(stringToSearch) };
+var pos = function(totalStr,stringToSearch){
+  return str.indexOf(stringToSearch)
+};
 
 console.log(pos(str,searchStr));
 
