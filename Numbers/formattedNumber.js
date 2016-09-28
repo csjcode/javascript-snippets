@@ -10,3 +10,7 @@ function padZeros(num, totalLen) {
 }
 
 padZeros(65,3)
+
+padZeros(10,3)
+
+padZeros(12,4)
