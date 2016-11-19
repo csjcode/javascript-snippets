@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make Future Date</title>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+  </head>
+  <body>
+
+<h3>Make Future Date</h3>
+
+<div id="date"></div>
+
+
+<script>
+
+  // Basic example
+  var dtElem = document.getElementById("date");
+  var month = 10; // Month 10, in zero based system, is November
+  var day = 18;
+  var year = 2075;
+  var dt = new Date(year,month,day); // time is set to zero by default
+
+  dtElem.innerHTML += "<p>SET DATE: " + dt + "</p>";
+
+  var futureDate = new Date();
+  dtresult = futureDate.setDate(futureDate.getDate() + 10);
+
+  dt = new Date(dtresult);
+
+  dtElem.innerHTML += "<p>GET DATE 10 days from now: " + dt + "</p>";
+
+</script>
+
+
+  </body>
+</html>
