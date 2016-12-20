@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+  <div id="result">
+
+  </div>
+
+
+<script>
+
+  result = document.getElementById("result");
+
+  // set array length
+  var arrayLength = 3;
+
+  // create array
+
+  var multiArray = new Array(arrayLength);
+
+  for (var i = 0; i < multiArray.length; i++) {
+    multiArray[i] = new Array(arrayLength);
+  }
+
+
+  // add items to first array index
+  multiArray[0][0] = "Javascript";
+  multiArray[0][1] = "PHP";
+  multiArray[0][2] = "Linux";
+  // second
+  multiArray[1][0] = 20;
+  multiArray[1][1] = 51;
+  multiArray[1][2] = 73;
+  // third
+  multiArray[2][0] = ['server','operatiing system'];
+  multiArray[2][1] = ['scripting','programming'];
+  multiArray[2][2] = ['read','ebooks'];
+
+
+  result.innerHTML = "<p>Result: </p>" + multiArray;
+  result.innerHTML += "<p>Result 2: </p>" + multiArray[2][1];
+
+</script>
+
+  </body>
+</html>
