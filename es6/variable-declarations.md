@@ -10,8 +10,6 @@
 1. Pitfall: with const an object within the object is still mutable  
 1. 4 block scoped variable declaratons: let, const, function, class
 
-### Template strings and template literals
-
 
 #### Examples
 
