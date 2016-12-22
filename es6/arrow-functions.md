@@ -2,8 +2,6 @@
 
 * Inspired by CoffeeScript
 
-
-
 #### Examples
 
 ```javascript
