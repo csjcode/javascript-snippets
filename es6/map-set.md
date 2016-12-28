@@ -42,3 +42,18 @@ console.log(person.get('name'));
 ```
 
 > Chris  
+
+Let's check out Sets, which are similar - sets are for unique values
+
+```javascript
+const locations = ["San Diego","New York"];
+
+const locationSet = new Set(locations);
+
+console.log(locationSet.has('San Diego'));
+
+```
+
+> true
+
+  
