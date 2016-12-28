@@ -128,11 +128,79 @@ for (let key of person.keys()){
 > name  
 > age
 
+You can also iterate values
+
+```javascript
+const person = new Map([
+  ['name','Chris'],
+  ['age','44'],
+
+]);
+
+for (let key of person.values()){
+  console.log(key)
+}
+
+```
+
+> Chris  
+> 44
 
 
+You can also iterate both keys and values with **entries**
+
+```javascript
+const person = new Map([
+  ['name','Chris'],
+  ['age','44'],
+]);
+
+for (let key of person.entries()){
+  console.log(key)
+}
+
+```
+> ["name", "Chris"]
+> ["age", "44"]
+
+We can do the same thing with destructuring
+
+```javascript
+const person = new Map([
+  ['name','Chris'],
+  ['age','44'],
+]);
+
+for (let [key,value] of person.entries()){
+  console.log(key);
+  console.log(value);
+}
+
+```
+> name
+> Chris
+> age
+> 44
 
 
+To delete a property we can use the delete keyword
 
+```javascript
+
+
+  const person = new Map([
+    ['name','Chris'],
+    ['age','44'],
+  ]);
+
+  person.delete('name');
+
+  for (let [key,value] of person.entries()){
+    console.log(key);
+    console.log(value);
+  }
+
+```
 
 
 x
