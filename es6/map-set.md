@@ -1,4 +1,4 @@
-### Map and Set in ES6
+### Map and Set Usage in ES6 using Strings, Arrays
 
 * note: this Map is different from the map function prototype
 
@@ -201,6 +201,27 @@ To delete a property we can use the delete keyword
   }
 
 ```
+
+Delete all with the clear keyword
+
+```javascript
+
+
+  const person = new Map([
+    ['name','Chris'],
+    ['age','44'],
+  ]);
+
+  person.clear();
+
+  for (let [key,value] of person.entries()){
+    console.log(key);
+    console.log(value);
+  }
+
+```
+
+These methods can also be used for Sets
 
 
 x
