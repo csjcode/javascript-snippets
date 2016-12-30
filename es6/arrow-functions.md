@@ -1,6 +1,14 @@
 ### Arrow Functions
 
-* Inspired by CoffeeScript
+* Syntax inspired by CoffeeScript
+* An arrow function does not create its own this context, so this has its original meaning from the enclosing context.
+
+```javascript
+(param1, param2, …, paramN) => { statements }
+(param1, param2, …, paramN) => expression
+// Parenthesize the body to return an object literal expression:
+params => ({foo: bar})
+```
 
 #### Examples
 
@@ -101,3 +109,27 @@ person.showHobbies();
 > "Chris likes MMA"
 
 Fat arrow function fixes scoped. If you cannot use the fat arrow, outside the forEach you can specify `slef = this`;
+
+
+More examples:
+
+```javascript
+var materials = [
+  "Hydrogen",
+  "Helium",
+  "Lithium",
+  "Beryllium"
+];
+
+var materialsLength1 = materials.map(function(material){
+ return material.length
+});
+
+var materialsLength2 = materials.map((material)=>{
+ return material.length
+});
+
+var materialsLength3 = materials.map(material=> material.length);
+
+
+```
